@@ -1,0 +1,38 @@
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Distribution
+*.egg-info/
+dist/
+build/
+
+# Piper TTS binary and voice models (large files, user must download)
+piper/
+
+# Runtime directories (generated at runtime)
+logs/
+memory/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Environment variables
+.env
+*.env

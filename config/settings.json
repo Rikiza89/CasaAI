@@ -1,0 +1,89 @@
+{
+    "app_name": "CasaAI 🇮🇹",
+    "version": "1.0.0",
+
+    "audio": {
+        "sample_rate": 16000,
+        "channels": 1,
+        "dtype": "float32",
+        "block_size": 2048,
+        "silence_threshold": 0.015,
+        "silence_duration_sec": 1.5,
+        "max_record_sec": 30,
+        "input_device": null,
+        "output_device": null
+    },
+
+    "wake_word": {
+        "keyword": "casa",
+        "energy_threshold": 0.02,
+        "listen_duration_sec": 3.0,
+        "forced_language": "it"
+    },
+
+    "stt": {
+        "model_size": "small",
+        "device": "cuda",
+        "compute_type": "float16",
+        "beam_size": 5,
+        "language": null,
+        "vad_filter": true,
+        "vad_parameters": {
+            "min_silence_duration_ms": 500,
+            "speech_pad_ms": 200
+        }
+    },
+
+    "llm": {
+        "base_url": "http://localhost:11434",
+        "model": "qwen2.5:7b-instruct-q4_K_M",
+        "max_tokens": 300,
+        "temperature": 0.7,
+        "timeout_sec": 60,
+        "context_window": 4096
+    },
+
+    "tts": {
+        "piper_executable": "C:\\CasaAI\\piper\\piper\\piper.exe",
+        "voice_model": "C:\\CasaAI\\piper\\voices\\it_IT-riccardo-x_low.onnx",
+        "output_sample_rate": 22050,
+        "speaker_id": 0
+    },
+
+    "memory": {
+        "max_entries": 10,
+        "file_path": "memory/conversation.json"
+    },
+
+    "logging": {
+        "log_dir": "logs",
+        "max_file_size_mb": 10,
+        "backup_count": 5,
+        "level": "INFO"
+    },
+
+    "ui": {
+        "bg_color": "#0D0D0D",
+        "fg_color": "#E0E0E0",
+        "accent_color": "#00C853",
+        "warning_color": "#FF6D00",
+        "error_color": "#FF1744",
+        "font_family": "Consolas",
+        "title_font_size": 28,
+        "label_font_size": 14,
+        "content_font_size": 13,
+        "refresh_interval_ms": 500
+    },
+
+    "safety": {
+        "max_response_tokens": 300,
+        "blocked_topics": [
+            "violence",
+            "politics",
+            "hate",
+            "sexual",
+            "weapons",
+            "drugs"
+        ]
+    }
+}
