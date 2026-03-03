@@ -81,9 +81,9 @@ cd CasaAI
 
 ### 2. Create Python Virtual Environment
 
-```powershell
+```bash
 python -m venv .venv
-.\.venv\Scripts\Activate.ps1
+.\.venv\Scripts\activate
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
