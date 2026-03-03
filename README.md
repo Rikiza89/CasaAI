@@ -57,14 +57,14 @@ CasaAI/
 
 **Design Principles:** Clean Architecture, dependency injection, typed configuration, Protocol-based abstractions, explicit error handling, no global mutable state.
 
-## 📋 Requirements
+## 📋 Requirements (tested with)
 
 | Component | Requirement |
 |-----------|-------------|
 | OS | Windows 11 |
 | Python | 3.11.x |
 | GPU | NVIDIA with 8GB+ VRAM |
-| GPU Driver | 570.xx+ (for RTX 50XX) or compatible |
+| GPU Driver | 570.xx+ (for RTX 5050) |
 | Ollama | Latest version |
 | Piper | v2023.11.14-2 (Windows binary) |
 | Audio | Microphone + Speakers |
@@ -75,7 +75,7 @@ CasaAI/
 ### 1. Clone Repository
 
 ```powershell
-git clone https://github.com/YOUR_USERNAME/CasaAI.git
+git clone https://github.com/Rikiza89/CasaAI.git
 cd CasaAI
 ```
 
@@ -87,6 +87,7 @@ python -m venv .venv
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
+install requirements will require time because of cuda libraries.
 
 ### 3. Install Ollama & Pull Model
 
