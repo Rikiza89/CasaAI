@@ -83,7 +83,7 @@ cd CasaAI
 
 ```bash
 python -m venv .venv
-.\.venv\Scripts\activate
+.venv\Scripts\activate
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
@@ -132,19 +132,19 @@ Edit `config/settings.json` and update the Piper paths to match your installatio
 
 ### 7. Verify Setup
 
-```powershell
+```bash
 python setup_verify.py
 ```
 
 ## ▶️ Usage
 
-```powershell
+```bash
 # Make sure Ollama is running
 ollama serve
 
 # In another terminal
 cd CasaAI
-.\.venv\Scripts\Activate.ps1
+.venv\Scripts\activate
 python main.py
 ```
 
