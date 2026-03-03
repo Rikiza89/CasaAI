@@ -1,6 +1,9 @@
+
 faster-whisper==1.1.0
 sounddevice==0.5.1
 numpy==1.26.4
 requests==2.32.3
 psutil==6.1.1
 scipy==1.14.1
+nvidia-cublas-cu12==12.8.3.14
+nvidia-cudnn-cu12==9.10.1.2
